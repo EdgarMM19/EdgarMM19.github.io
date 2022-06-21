@@ -10,6 +10,8 @@
   margin-left:  auto;
   margin-right: auto;
     padding-top: 2px;
+      text-align: justify;
+
 
 }
 .head {
@@ -26,6 +28,18 @@
   margin-left:  auto;
   margin-right: auto;
   text-align: left;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 a { 
@@ -85,7 +99,9 @@ nav a:hover {
 
 <div style="background-color:#CBEAEE;">
 <div class="content">
-<p>
+<div class="row">
+  <div class="column">
+    <p>
   Welcome to my webpage! I'm a maths and computer science student at <a href="https://www.upc.edu/en"> UPC</a> (Universitat Politecnica de Catalunya) in Barcelona.
 </p>
 <p>
@@ -95,11 +111,18 @@ nav a:hover {
   Next winter I will be visiting <a href="http://www.cs.umd.edu/~hajiagha/"> Prof. MohammadTaghi</a> for my final degree project at <a href="https://umd.edu/"> University of Maryland</a>.
 </p>
 <p>
-	I'm interested in areas in the intersection of maths and computer science, that include Game Theory, Discrete Mathematics, Theory of Computation, Market Optimization and others. 
+  I'm interested in areas in the intersection of maths and computer science, that include Game Theory, Discrete Mathematics, Theory of Computation, Market Optimization and others. 
 </p>
 <p>
-	I love solving problems (and creating them), teaching, sci-fi and skiing.
+  I love solving problems (and creating them), teaching, sci-fi and skiing.
 </p>
+  </div>
+  <div class="column">
+    <img src='resources/foto.jpg' width="280" style="padding: 20px">
+
+  </div>
+</div>
+
 
 <h2>
 Work and research experience
