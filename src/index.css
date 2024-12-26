@@ -1,0 +1,108 @@
+/* Global styles */
+body {
+  background-color: #CBEAEE;
+  text-align: center;
+}
+
+/* Layout components */
+.content {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding-top: 2px;
+  text-align: justify;
+  font-family: helvetica;
+  background-color: #CBEAEE;
+}
+
+.head {
+  background-color: #A9DBE1;
+  height: fit-content;
+  margin-bottom: 100px;
+  padding: 2px 0 10px;
+}
+
+.subhead {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Grid system */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+/* Navigation */
+nav {
+  margin-left: 1%;
+}
+
+nav a {
+  color: #000;
+  display: inline-block;
+  padding: 0.5% 2%;
+  margin: 0;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #6EBBFF;
+}
+
+nav a.current {
+  background-color: #FFFFFF;
+}
+
+/* Typography */
+.page-title {
+  font-family: helvetica;
+}
+
+.contact-links {
+  text-align: left;
+}
+
+.contact-links a {
+  color: blue;
+  margin-right: 10px; /* Adjust the value as needed */
+
+}
+
+/* Tables */
+.content-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 0 auto;
+}
+
+.table-cell {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.logo-cell {
+  width: 25%;
+}
+
+.content-cell {
+  width: 75%;
+}
+
+/* Images */
+.profile-image {
+  width: 280px;
+  padding: 20px;
+}
+
+.logo-image {
+  width: 120px;
+}
